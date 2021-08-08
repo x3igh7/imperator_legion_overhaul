@@ -1,0 +1,163 @@
+﻿on_great_battle_won_country = { #root = country scope of the main unit on the winning side, scope:actor = main unit on the winning side, scope:target = main unit on the losing side
+	effect = {
+		if = {
+			limit = {
+				scope:actor = {
+					exists = commander
+				}
+			}
+			scope:actor.commander = {
+				set_variable = {
+					name = great_battle_won_flag
+					days = 720
+				}
+				trigger_event = {
+					on_action = custom_on_great_battle_commander
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:target.unit_owner = c:REB #All REB stacks are slave stacks
+			}
+			scope:target.unit_location = { #Where did the rebels die?
+				if = {
+					limit = {
+						has_owner = yes #If the slaves wandered into no mans land and died there they are lost.
+					}
+					owner = { #The country in which the Slaves were crushed.
+						save_scope_as = country_dealing_with_slave_revolt
+						if = {
+							limit = {
+								has_country_modifier = ongoing_slave_revolt
+							}
+							remove_country_modifier = ongoing_slave_revolt #Right away
+						}
+						set_local_variable = {
+							name = slaves_defeated
+							value = { value = scope:target.unit_size }
+						}
+						trigger_event = { id = slave_revolts.3 }
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:actor = {
+					exists = commander
+					commander = {
+						this = char:70
+						is_alive = yes
+						is_ruler = yes
+						is_general = yes
+						NOT = { has_variable = pyrrhus_fallback_return_flag }
+						employer = { has_land = yes }
+					}
+				}
+				scope:target = {
+					exists = commander
+					commander = {
+						is_alive = yes
+						OR = {
+							has_trait = daring
+							has_trait = brave
+							has_trait = reckless
+							has_trait = proud
+						}
+					}
+				}
+			}
+			trigger_event = { id = dhe_dde_pyrrhus.33 }
+		}
+		if = {
+			limit = {
+				scope:actor = {
+					exists = commander
+					commander = {
+						this = char:70
+						is_alive = yes
+						is_ruler = yes
+						is_general = yes
+						NOT = { has_variable = pyrrhus_fallback_return_flag }
+						employer = { has_land = yes }
+						NOT = { has_trait = cautious }
+					}
+				}
+				scope:target.unit_owner = {
+					country_culture_group = latin
+					capital_scope = {
+						OR = {
+							is_in_region = central_italy_region
+							is_in_region = magna_graecia_region
+						}
+					}
+				}
+			}
+			trigger_event = { id = dhe_dde_pyrrhus.36 }
+		}
+		if = {
+			limit = {
+				scope:actor = { has_legion_trigger = yes }
+			}
+			if = {
+				limit = { exists = scope:actor.commander }
+				scope:actor.legion = {
+					add_legion_history = {
+						key = great_battle_won_history
+						commander = scope:actor.commander
+						province = scope:actor.unit_location
+					}
+				}
+			}
+			else = {
+				scope:actor.legion = {
+					add_legion_history = {
+						key = great_battle_won_history
+						commander = scope:actor.unit_owner.current_ruler
+						province = scope:actor.unit_location
+					}
+				}
+			}
+		}
+	}
+	events = {
+		ml_archer_distinctions.1
+		ml_archer_distinctions.3
+		ml_archer_distinctions.5
+	}
+}
+
+on_great_battle_lost_country = { #root = country scope of the main unit on the losing side, scope:actor = main unit on the losing side, scope:target = main unit on the winning side
+	effect = {
+		if = {
+			limit = {
+				scope:actor = { has_legion_trigger = yes }
+			}
+			if = {
+				limit = { exists = scope:actor.commander }
+				scope:actor.legion = {
+					add_legion_history = {
+						key = great_battle_lost_history
+						commander = scope:actor.commander
+						province = scope:actor.unit_location
+					}
+				}
+			}
+			else = {
+				scope:actor.legion = {
+					add_legion_history = {
+						key = great_battle_lost_history
+						commander = scope:actor.unit_owner.current_ruler
+						province = scope:actor.unit_location
+					}
+				}
+			}
+		}
+	}
+	events = {
+		ml_archer_distinctions.2
+		ml_archer_distinctions.4
+		ml_archer_distinctions.6
+	}
+}
