@@ -210,7 +210,7 @@ NPop = {
 
 
 NCombat = {
-	GREAT_BATTLE_SIZE_THRESHOLD = 16000 # Legion Distinctions Overhaul: default is 8000
+	GREAT_BATTLE_SIZE_THRESHOLD = 12000 # Legion Distinctions Overhaul: default is 8000
 	MORALE_COLLAPSE_THRESHOLD = 0.25
 	PERSONAL_LOYALTY_BONUS = 0.1
 	

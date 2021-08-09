@@ -234,6 +234,9 @@ distinction_seige_master_01 = {
 
 	}
 	unit = {
+
+	}
+	legion = {
 		siege_ability = 0.05
 	}
 }
@@ -244,6 +247,9 @@ distinction_seige_master_02 = {
 
 	}
 	unit = {
+	
+	}
+	legion = {
 		siege_ability = 0.1
 		siege_engineers = 1
 	}
@@ -255,6 +261,9 @@ distinction_seige_master_03 = {
 
 	}
 	unit = {
+
+	}
+	legion = {
 		siege_ability = 0.15
 		siege_engineers = 1
 	}
@@ -266,6 +275,9 @@ distinction_seige_master_04 = {
 
 	}
 	unit = {
+
+	}
+	legion = {
 		siege_ability = 0.2
 		siege_engineers = 2
 	}
