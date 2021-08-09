@@ -638,6 +638,8 @@ ml_archer_distinctions.5 = {
 						
 					}
 
+					trigger_event = ml_cohort_masterty_distinctions.1
+
 					scope:actor.legion = {
 						add_distinction = distinction_archer_discipline_1
 					}
@@ -655,6 +657,8 @@ ml_archer_distinctions.5 = {
 							}
 						}
 					}
+
+					trigger_event = ml_cohort_masterty_distinctions.1
 					
 					scope:actor.legion = {
 						remove_distinction = distinction_archer_discipline_1

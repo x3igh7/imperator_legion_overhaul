@@ -1,0 +1,111 @@
+﻿namespace = ml_siege_distinctions
+
+## adds any siege distinctions
+ml_siege_distinctions.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+    	scope:actor = {
+            has_legion_trigger = yes
+            unit_location = { # only trigger if in enemy territory
+            	has_owner = yes
+            	NOT = {
+	            	owner = scope:actor.unit_owner
+            	}
+            }
+        }
+	}
+
+	immediate = {
+		scope:action = {
+			if = {
+				limit = {
+					has_variable = siege_victories
+				}
+				
+				change_variable = {
+					name = siege_victories
+					add 1
+				}
+			}
+			else = {
+				set_variable = {
+					name = siege_victories
+					value = 1
+				}
+			}
+
+			if = {
+				limit = {
+					var:siege_victories = 5
+				}
+
+				scope:actor.legion = {
+					add_distinction = distinction_seige_master_01
+				}
+			}
+			else_if = {
+				limit = {
+					var:siege_victories = 10
+				}
+
+				scope:actor.legion = {
+					remove_distinction = distinction_seige_master_01
+					add_distinction = distinction_seige_master_02
+				}
+			}
+			else_if = {
+				limit = {
+					var:siege_victories = 15
+				}
+				
+				scope:actor.legion = {
+					remove_distinction = distinction_seige_master_02
+					add_distinction = distinction_seige_master_03
+				}
+			}
+			else_if = {
+				limit = {
+					var:siege_victories = 20
+				}
+				
+				scope:actor.legion = {
+					remove_distinction = distinction_seige_master_03
+					add_distinction = distinction_seige_master_04
+				}
+			}
+		}
+	}
+}
+
+# removes siege distinctions after fort battle loss
+ml_siege_distinctions.2 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+    	scope:actor = {
+            has_legion_trigger = yes
+            unit_location = { # only trigger if in enemy fort territory
+            	fort_level >= 1
+            	has_owner = yes
+            	NOT = {
+	            	owner = scope:actor.unit_owner
+            	}
+            }
+        }
+	}
+
+	immediate = {
+		scope:actor = {
+			if = {
+				limit = {
+					has_variable siege_victories
+				}
+
+				remove_variable siege_victories
+			}
+		}
+	}
+}

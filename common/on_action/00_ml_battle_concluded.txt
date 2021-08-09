@@ -122,6 +122,8 @@
 		}
 	}
 	events = {
+		ml_victorious_morale.1
+		ml_desert_distinctions.1
 		ml_archer_distinctions.1
 		ml_archer_distinctions.3
 		ml_archer_distinctions.5
@@ -156,8 +158,36 @@ on_great_battle_lost_country = { #root = country scope of the main unit on the l
 		}
 	}
 	events = {
+		ml_victorious_morale.2
+		ml_desert_distinctions.2
+		ml_siege_distinctions.2
 		ml_archer_distinctions.2
 		ml_archer_distinctions.4
 		ml_archer_distinctions.6
+	}
+}
+
+on_siege_won = { #Only triggers if sieging army has a commander (which is also ROOT in this on_action)
+	effect = {
+		if = {
+			limit = {
+				is_mercenary = yes
+				has_variable = adventuring_from
+				var:adventuring_from = {
+					has_land = yes
+				}
+			}
+			set_variable = {
+				name = adventuring_mercenary_siege
+				value = location
+			}
+		}
+	}
+	
+	events = {
+		warfare.1
+		warfare.10
+		warfare.17
+		ml_siege_distinctions.1
 	}
 }

@@ -123,35 +123,6 @@ on_battle_lost = {
 	}
 }
 
-on_siege_won = { #Only triggers if sieging army has a commander (which is also ROOT in this on_action)
-	effect = {
-		if = {
-			limit = {
-				is_mercenary = yes
-				has_variable = adventuring_from
-				var:adventuring_from = {
-					has_land = yes
-				}
-			}
-			set_variable = {
-				name = adventuring_mercenary_siege
-				value = location
-			}
-		}
-	}
-	
-	events = {
-		warfare.1
-		warfare.10
-		warfare.17
-	}
-	random_events = {
-		1000 = 0
-		25 = distinction.30
-	}
-
-}
-
 #scope:former_ruler, root = country,
 #same as on_ruler_change, but called before switching
 on_reign_ending = { 
