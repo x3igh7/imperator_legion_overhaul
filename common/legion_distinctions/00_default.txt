@@ -5,10 +5,13 @@ distinction_legion_default = {
 	commander = {
 		
 	}
+	## this is a very slight boost given the professional nature of the legion
+	## but ultimately unit experience (drilling) should be the thing that outclasses levies
+	## as opposted to an inherent advantage
 	unit = {
-		discipline = 0.05
-		land_morale_modifier = 0.05
+		cohort_reinforcement_speed = 0.1 
 		army_movement_speed = 0.1
+		experience_decay  = -0.01
 	}
 }
 
@@ -247,7 +250,7 @@ distinction_seige_master_02 = {
 
 	}
 	unit = {
-	
+
 	}
 	legion = {
 		siege_ability = 0.1
@@ -286,7 +289,7 @@ distinction_seige_master_04 = {
 #### TERRAIN ####
 
 distinction_terrain_master_01 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -296,7 +299,7 @@ distinction_terrain_master_01 = {
 }
 
 distinction_terrain_master_02 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -306,7 +309,7 @@ distinction_terrain_master_02 = {
 }
 
 distinction_terrain_master_03 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -316,7 +319,7 @@ distinction_terrain_master_03 = {
 }
 
 distinction_terrain_master_04 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -326,7 +329,7 @@ distinction_terrain_master_04 = {
 }
 
 distinction_terrain_master_05 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -337,7 +340,7 @@ distinction_terrain_master_05 = {
 
 ### DESERT ###
 distinction_desert_master_01 = {
-	icon = "phalera_ox",
+	icon = "phalera_ox"
 	commander = {
 
 	}
@@ -348,7 +351,7 @@ distinction_desert_master_01 = {
 
 
 distinction_desert_master_02 = {
-	icon = "phalera_ox",
+	icon = "phalera_ox"
 	commander = {
 
 	}
@@ -359,7 +362,7 @@ distinction_desert_master_02 = {
 }
 
 distinction_desert_01 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -369,7 +372,7 @@ distinction_desert_01 = {
 }
 
 distinction_desert_02 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -379,7 +382,7 @@ distinction_desert_02 = {
 }
 
 distinction_desert_03 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -389,7 +392,7 @@ distinction_desert_03 = {
 }
 
 distinction_desert_04 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -399,7 +402,7 @@ distinction_desert_04 = {
 }
 
 distinction_desert_05 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -409,7 +412,7 @@ distinction_desert_05 = {
 }
 
 distinction_desert_06 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -419,7 +422,7 @@ distinction_desert_06 = {
 }
 
 distinction_desert_07 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -429,7 +432,7 @@ distinction_desert_07 = {
 }
 
 distinction_desert_08 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -439,7 +442,7 @@ distinction_desert_08 = {
 }
 
 distinction_desert_09 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}
@@ -449,7 +452,7 @@ distinction_desert_09 = {
 }
 
 distinction_desert_10 = {
-	icon = "phalera_amphore",
+	icon = "phalera_amphore"
 	commander = {
 
 	}

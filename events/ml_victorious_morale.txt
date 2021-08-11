@@ -29,10 +29,10 @@ ml_victorious_morale.1 = {
 								has_distinction = distinction_battle_master_02
 							}
 						}
-						
-						remove_distinction = distinction_battle_master_01
-						add_distinction = distinction_battle_master_02
 					}
+
+					remove_distinction = distinction_battle_master_01
+					add_distinction = distinction_battle_master_02
 				}
 			} 
 			else_if = {
@@ -109,10 +109,10 @@ ml_victorious_morale.1 = {
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_9
+					has_distinction = distinction_victorious_morale_09
 				}
 
-				remove_distinction = distinction_victorious_morale_9
+				remove_distinction = distinction_victorious_morale_09
 				add_distinction = distinction_victorious_morale_10
 
 				if = {
@@ -123,82 +123,82 @@ ml_victorious_morale.1 = {
 								has_distinction = distinction_battle_master_02
 							}
 						}
-
-						add_distinction = distinction_battle_master_01
 					}
+
+					add_distinction = distinction_battle_master_01
 				}
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_8
+					has_distinction = distinction_victorious_morale_08
 				}
 
-				remove_distinction = distinction_victorious_morale_8
+				remove_distinction = distinction_victorious_morale_08
 
-				add_distinction = distinction_victorious_morale_9
+				add_distinction = distinction_victorious_morale_09
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_7
+					has_distinction = distinction_victorious_morale_07
 				}
 
-				remove_distinction = distinction_victorious_morale_7
+				remove_distinction = distinction_victorious_morale_07
 
-				add_distinction = distinction_victorious_morale_8
+				add_distinction = distinction_victorious_morale_08
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_6
+					has_distinction = distinction_victorious_morale_06
 				}
 
-				remove_distinction = distinction_victorious_morale_6
+				remove_distinction = distinction_victorious_morale_06
 
-				add_distinction = distinction_victorious_morale_7
+				add_distinction = distinction_victorious_morale_07
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_5
+					has_distinction = distinction_victorious_morale_05
 				}
 
-				remove_distinction = distinction_victorious_morale_5
+				remove_distinction = distinction_victorious_morale_05
 
-				add_distinction = distinction_victorious_morale_6
+				add_distinction = distinction_victorious_morale_06
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_4
+					has_distinction = distinction_victorious_morale_04
 				}
 
-				remove_distinction = distinction_victorious_morale_4
+				remove_distinction = distinction_victorious_morale_04
 
-				add_distinction = distinction_victorious_morale_5
+				add_distinction = distinction_victorious_morale_05
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_3
+					has_distinction = distinction_victorious_morale_03
 				}
 
-				remove_distinction = distinction_victorious_morale_3
+				remove_distinction = distinction_victorious_morale_03
 
-				add_distinction = distinction_victorious_morale_4
+				add_distinction = distinction_victorious_morale_04
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_2
+					has_distinction = distinction_victorious_morale_02
 				}
 
-				remove_distinction = distinction_victorious_morale_2
+				remove_distinction = distinction_victorious_morale_02
 
-				add_distinction = distinction_victorious_morale_3
+				add_distinction = distinction_victorious_morale_03
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_1
+					has_distinction = distinction_victorious_morale_01
 				}
 
-				remove_distinction = distinction_victorious_morale_1
+				remove_distinction = distinction_victorious_morale_01
 
-				add_distinction = distinction_victorious_morale_2
+				add_distinction = distinction_victorious_morale_02
 			}
 			else_if = {
 				limit = {
@@ -207,7 +207,7 @@ ml_victorious_morale.1 = {
 					}
 				}
 
-				add_distinction = distinction_victorious_morale_1
+				add_distinction = distinction_victorious_morale_01
 			}
 		}
 	}
@@ -305,66 +305,66 @@ ml_victorious_morale.2 = {
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_9
+					has_distinction = distinction_victorious_morale_09
 				}
 
-				remove_distinction = distinction_victorious_morale_9
+				remove_distinction = distinction_victorious_morale_09
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_8
+					has_distinction = distinction_victorious_morale_08
 				}
 
-				remove_distinction = distinction_victorious_morale_8
+				remove_distinction = distinction_victorious_morale_08
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_7
+					has_distinction = distinction_victorious_morale_07
 				}
 
-				remove_distinction = distinction_victorious_morale_7
+				remove_distinction = distinction_victorious_morale_07
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_6
+					has_distinction = distinction_victorious_morale_06
 				}
 
-				remove_distinction = distinction_victorious_morale_6
+				remove_distinction = distinction_victorious_morale_06
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_5
+					has_distinction = distinction_victorious_morale_05
 				}
 
-				remove_distinction = distinction_victorious_morale_5
+				remove_distinction = distinction_victorious_morale_05
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_4
+					has_distinction = distinction_victorious_morale_04
 				}
 
-				remove_distinction = distinction_victorious_morale_4
+				remove_distinction = distinction_victorious_morale_04
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_3
+					has_distinction = distinction_victorious_morale_03
 				}
 
-				remove_distinction = distinction_victorious_morale_3
+				remove_distinction = distinction_victorious_morale_03
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_2
+					has_distinction = distinction_victorious_morale_02
 				}
 
-				remove_distinction = distinction_victorious_morale_2
+				remove_distinction = distinction_victorious_morale_02
 			}
 			else_if = {
 				limit = {
-					has_distinction = distinction_victorious_morale_1
+					has_distinction = distinction_victorious_morale_01
 				}
 
-				remove_distinction = distinction_victorious_morale_1
+				remove_distinction = distinction_victorious_morale_01
 			}
 		}
 	}

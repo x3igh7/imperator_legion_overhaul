@@ -32,9 +32,10 @@ ml_desert_distinctions.1 = {
 								has_distinction = distinction_desert_master_02
 							}
 						}
-						remove_distinction = distinction_desert_master_01
-						add_distinction = distinction_desert_master_02
 					}
+
+					remove_distinction = distinction_desert_master_01
+					add_distinction = distinction_desert_master_02
 				}
 
 				scope:actor = {
@@ -45,12 +46,12 @@ ml_desert_distinctions.1 = {
 
 						if = {
 							limit = {
-								terrain_master < 5
+								var:terrain_master < 5
 							}
 
 							change_variable = {
 								name = terrain_master
-								add 1
+								add = 1
 							}
 						}
 					} else {
@@ -60,7 +61,7 @@ ml_desert_distinctions.1 = {
 						}
 					}
 					
-					trigger_event = ml_terrain_distinctions.1
+					trigger_event = ml_terrain_master_distinctions.1
 				}
 			}
 			else_if = {
@@ -110,10 +111,11 @@ ml_desert_distinctions.1 = {
 								has_distinction = distinction_desert_master_01
 								has_distinction = distinction_desert_master_02
 							}
-						}
-						
-						add_distinction = distinction_desert_master_01
+						}						
 					}
+
+					add_distinction = distinction_desert_master_01
+
 				}
 			}
 			else_if = {

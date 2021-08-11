@@ -2,22 +2,15 @@
 
 ## adds any siege distinctions
 ml_siege_distinctions.1 = {
-	type = country_event
+	type = character_event
 	hidden = yes
 
 	trigger = {
-		ordered_character_unit = {
-            limit = {
-                has_legion_trigger = yes
-                unit_location = ROOT.location
-            }
-            save_scope_as = legion_unit
-        }
-
 		has_legion_trigger = yes
     	any_character_unit = {
             has_legion_trigger = yes
-            unit_location = { # only trigger if in enemy territory
+            unit_location = { # only trigger if in enemy territory and on a fort
+            	fort_level >= 1
             	has_owner = yes
             	NOT = {
 	            	owner = scope:legion_unit.unit_owner
@@ -37,7 +30,7 @@ ml_siege_distinctions.1 = {
 				
 				change_variable = {
 					name = siege_victories
-					add 1
+					add = 1
 				}
 			}
 			else = {
@@ -92,30 +85,31 @@ ml_siege_distinctions.1 = {
 
 # removes siege distinctions after fort battle loss
 ml_siege_distinctions.2 = {
-	type = country_event
+	type = character_event
 	hidden = yes
 
 	trigger = {
-    	scope:actor = {
+        any_character_unit = {
             has_legion_trigger = yes
-            unit_location = { # only trigger if in enemy fort territory
+            unit_location = { # only trigger if in enemy territory and on a fort
             	fort_level >= 1
             	has_owner = yes
             	NOT = {
-	            	owner = scope:actor.unit_owner
+	            	owner = scope:legion_unit.unit_owner
             	}
             }
-        }
+        }    
 	}
 
 	immediate = {
-		scope:actor = {
+		legion = { save_scope_as = siege_legion }
+		scope:legion_unit = {
 			if = {
 				limit = {
 					has_variable siege_victories
 				}
 
-				remove_variable siege_victories
+				remove_variable = siege_victories
 			}
 		}
 	}

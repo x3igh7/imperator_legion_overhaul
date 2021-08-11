@@ -11,14 +11,14 @@ ml_cohort_master_distinctions.1 = {
 		}
 	}
 
-	scope:actor = {
+	immediate = {
 		if = {
 			limit = {
 				has_variable = cohort_master
 			}
 			change_variable = {
 				name = cohort_master
-				add 1
+				add = 1
 			}
 		}
 		else = {
@@ -28,7 +28,9 @@ ml_cohort_master_distinctions.1 = {
 			}
 		}
 
-		trigger_event = ml_cohort_master_distinctions.2
+		trigger_event = {
+			id = ml_cohort_master_distinctions.2
+		}
 	}
 }
 
