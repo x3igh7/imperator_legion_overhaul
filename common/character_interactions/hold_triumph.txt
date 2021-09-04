@@ -1,5 +1,4 @@
 ﻿hold_triumph = {
-
 	on_other_nation = no
 	on_own_nation = yes
 	
