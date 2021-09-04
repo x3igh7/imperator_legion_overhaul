@@ -590,6 +590,12 @@ ml_light_infantry_distinctions.5 = {
 
 	trigger = {
 		scope:actor = {
+			any_sub_unit = {
+            	count >= 20
+            	AND = {
+	            	sub_unit_type = light_infantry
+            	}
+            }
 			has_legion_trigger = yes
 		}
 	}
@@ -682,6 +688,12 @@ ml_light_infantry_distinctions.6 = {
 
 	trigger = {
 		scope:actor = {
+			any_sub_unit = {
+            	count >= 1
+            	AND = {
+	            	sub_unit_type = light_infantry
+            	}
+            }
 			has_legion_trigger = yes
 		}
 	}
