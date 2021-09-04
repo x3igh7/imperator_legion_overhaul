@@ -225,7 +225,7 @@ ml_victorious_morale.2 = {
 	}
 
 	immediate = {
-		scope:actor = {
+		scope:actor.legion = {
 			if = {
 				limit = {
 					has_distinction = distinction_victorious_morale_20

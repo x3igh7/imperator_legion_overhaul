@@ -91,5 +91,8 @@ on_siege_won = {
 		warfare.10
 		warfare.17
 		ml_siege_distinctions.1
+	},
+	random_events = {
+
 	}
 }
