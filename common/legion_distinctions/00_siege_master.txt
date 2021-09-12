@@ -1,6 +1,6 @@
 ﻿#### SIEGE ####
 
-distinction_seige_master_01 = {
+distinction_siege_master_01 = {
 	icon = "phalera_tower"
 	commander = {
 
@@ -13,7 +13,7 @@ distinction_seige_master_01 = {
 	}
 }
 
-distinction_seige_master_02 = {
+distinction_siege_master_02 = {
 	icon = "phalera_tower"
 	commander = {
 
@@ -27,7 +27,7 @@ distinction_seige_master_02 = {
 	}
 }
 
-distinction_seige_master_03 = {
+distinction_siege_master_03 = {
 	icon = "phalera_tower"
 	commander = {
 
@@ -41,7 +41,7 @@ distinction_seige_master_03 = {
 	}
 }
 
-distinction_seige_master_04 = {
+distinction_siege_master_04 = {
 	icon = "phalera_tower"
 	commander = {
 

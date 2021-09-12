@@ -6,21 +6,30 @@ ml_siege_distinctions.1 = {
 	hidden = yes
 
 	trigger = {
-		has_legion_trigger = yes
     	any_character_unit = {
-            has_legion_trigger = yes
-            unit_location = { # only trigger if in enemy territory and on a fort
-            	fort_level >= 1
-            	has_owner = yes
-            	NOT = {
-	            	owner = scope:legion_unit.unit_owner
-            	}
-            }
+           	has_legion_trigger = yes
+           	any_sub_unit = {
+    			count >= 20
+    		}
+    		unit_location = ROOT.location
+    		unit_location = {
+    			fort_level >= 1
+    			NOT = {
+					owner = ROOT.legion.owner
+				}
+			}	
         }
 	}
 
 	immediate = {
-        legion = { save_scope_as = siege_legion }
+		ordered_character_unit = {
+            limit = {
+                has_legion_trigger = yes
+                unit_location = ROOT.location
+                any_sub_unit = { count >= 20 }
+            }
+            save_scope_as = legion_unit
+        }
 
 		scope:legion_unit = {
 			if = {
@@ -42,41 +51,47 @@ ml_siege_distinctions.1 = {
 
 			if = {
 				limit = {
-					var:siege_victories = 5
-				}
-
-				scope:siege_legion = {
-					add_distinction = distinction_seige_master_01
-				}
-			}
-			else_if = {
-				limit = {
-					var:siege_victories = 10
-				}
-
-				scope:siege_legion = {
-					remove_distinction = distinction_seige_master_01
-					add_distinction = distinction_seige_master_02
-				}
-			}
-			else_if = {
-				limit = {
-					var:siege_victories = 15
+					has_variable = siege_victories
 				}
 				
-				scope:siege_legion = {
-					remove_distinction = distinction_seige_master_02
-					add_distinction = distinction_seige_master_03
+				if = {
+					limit = {
+						var:siege_victories = 5
+					}
+					
+					scope:legion_unit.legion = {
+						add_distinction = distinction_siege_master_01
+					}
 				}
-			}
-			else_if = {
-				limit = {
-					var:siege_victories = 20
+				else_if = {
+					limit = {
+						var:siege_victories = 10
+					}
+	
+					scope:legion_unit.legion = {
+						remove_distinction = distinction_siege_master_01
+						add_distinction = distinction_siege_master_02
+					}
 				}
-				
-				scope:siege_legion = {
-					remove_distinction = distinction_seige_master_03
-					add_distinction = distinction_seige_master_04
+				else_if = {
+					limit = {
+						var:siege_victories = 15
+					}
+					
+					scope:legion_unit.legion = {
+						remove_distinction = distinction_siege_master_02
+						add_distinction = distinction_siege_master_03
+					}
+				}
+				else_if = {
+					limit = {
+						var:siege_victories = 20
+					}
+					
+					scope:legion_unit.legion = {
+						remove_distinction = distinction_siege_master_03
+						add_distinction = distinction_siege_master_04
+					}
 				}
 			}
 		}

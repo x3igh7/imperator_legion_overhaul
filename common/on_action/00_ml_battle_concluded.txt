@@ -100,14 +100,6 @@ on_siege_won = { #Only triggers if sieging army has a commander (which is also R
 				value = location
 			}
 		}
-
-		ordered_character_unit = {
-            limit = {
-                has_legion_trigger = yes
-                unit_location = ROOT.location
-            }
-            save_scope_as = legion_unit
-        }
 	}
 	
 	events = {
