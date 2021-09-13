@@ -31,4 +31,5 @@ Future Plans:
 This MOD was developed with multiplayer balance in mind, hence some of the large values to discourage abuse. If  you're interested in Imperator multiplayer join a campaign at Molon Labe: https://discord.gg/JuPs9wUJae
 
 PS: I marked this as requiring Heirs of Alexander, but it may work without it.
+
 PSS: If you want to try to use this mod with other mods, I would suggest loading this mod first in your playlist.
