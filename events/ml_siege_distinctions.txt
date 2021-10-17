@@ -56,7 +56,10 @@ ml_siege_distinctions.1 = {
 				
 				if = {
 					limit = {
-						var:siege_victories = 5
+						var:siege_victories = 2
+						NOT = {
+							has_distinction = distinction_siege_master_01						
+						}
 					}
 					
 					scope:legion_unit.legion = {
@@ -65,7 +68,10 @@ ml_siege_distinctions.1 = {
 				}
 				else_if = {
 					limit = {
-						var:siege_victories = 10
+						var:siege_victories = 6
+						NOT = {
+							has_distinction = distinction_siege_master_02						
+						}
 					}
 	
 					scope:legion_unit.legion = {
@@ -75,7 +81,10 @@ ml_siege_distinctions.1 = {
 				}
 				else_if = {
 					limit = {
-						var:siege_victories = 15
+						var:siege_victories = 12
+						NOT = {
+							has_distinction = distinction_siege_master_03						
+						}
 					}
 					
 					scope:legion_unit.legion = {
@@ -86,6 +95,9 @@ ml_siege_distinctions.1 = {
 				else_if = {
 					limit = {
 						var:siege_victories = 20
+						NOT = {
+							has_distinction = distinction_siege_master_03						
+						}
 					}
 					
 					scope:legion_unit.legion = {
@@ -123,7 +135,37 @@ ml_siege_distinctions.2 = {
 					has_variable siege_victories
 				}
 
-				remove_variable = siege_victories
+				if = {
+					limit = {
+						var:siege_victories >= 20
+					}
+
+					var:siege_victories = 20
+				}
+				else_if = {
+					limit = {
+						var:siege_victories >= 12
+					}
+
+					var:siege_victories = 12
+				}
+				else_if = {
+					limit = {
+						var:siege_victories >= 6
+					}
+
+					var:siege_victories = 6
+				}
+				else_if = {
+					limit = {
+						var:siege_victories >= 2
+					}
+
+					var:siege_victories = 2
+				}
+				else = {
+					remove_variable = siege_victories
+				}
 			}
 		}
 	}
