@@ -182,7 +182,7 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					NOT = {
-						has_distinction = distinction_archer_offensive_15
+						has_distinction = distinction_archer_offensive_20
 					}
 				}
 
@@ -216,16 +216,6 @@ ml_archer_distinctions.2 = {
 	}
 
 	immediate = {
-		scope:actor = {
-			if = {
-				limit = {
-					has_variable = archers_victories
-				}
-
-				remove_variable = archers_victories
-			}
-		}
-
 		scope:actor.legion = {
 			if = {
 				limit = {
@@ -589,16 +579,6 @@ ml_archer_distinctions.4 = {
 	}
 
 	immediate = {
-		scope:actor = {
-			if = {
-				limit = {
-					has_variable = archers_victories
-				}
-
-				remove_variable = archers_victories
-			}
-		}
-
 		scope:actor.legion = {
 			if = {
 				limit = {

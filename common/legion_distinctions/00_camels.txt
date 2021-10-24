@@ -160,6 +160,7 @@ distinction_camels_offensive_16 = {
 		camels_offensive = 0.16
 	}
 }
+
 distinction_camels_offensive_17 = {
 	icon = "phalera_horse"
 	commander = {
@@ -169,6 +170,7 @@ distinction_camels_offensive_17 = {
 		camels_offensive = 0.17
 	}
 }
+
 distinction_camels_offensive_18 = {
 	icon = "phalera_horse"
 	commander = {
@@ -178,6 +180,7 @@ distinction_camels_offensive_18 = {
 		camels_offensive = 0.18
 	}
 }
+
 distinction_camels_offensive_19 = {
 	icon = "phalera_horse"
 	commander = {
@@ -187,6 +190,7 @@ distinction_camels_offensive_19 = {
 		camels_offensive = 0.19
 	}
 }
+
 distinction_camels_offensive_20 = {
 	icon = "phalera_horse"
 	commander = {

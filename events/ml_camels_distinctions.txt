@@ -181,7 +181,7 @@ ml_camels_distinctions.1 = {
 			else_if = {
 				limit = {
 					NOT = {
-						has_distinction = distinction_camels_offensive_15
+						has_distinction = distinction_camels_offensive_20
 					}
 				}
 
@@ -215,16 +215,6 @@ ml_camels_distinctions.2 = {
 	}
 
 	immediate = {
-		scope:actor = {
-			if = {
-				limit = {
-					has_variable = camels_victories
-				}
-
-				remove_variable = camels_victories
-			}
-		}
-
 		scope:actor.legion = {
 			if = {
 				limit = {
@@ -588,16 +578,6 @@ ml_camels_distinctions.4 = {
 	}
 
 	immediate = {
-		scope:actor = {
-			if = {
-				limit = {
-					has_variable = camels_victories
-				}
-
-				remove_variable = camels_victories
-			}
-		}
-
 		scope:actor.legion = {
 			if = {
 				limit = {

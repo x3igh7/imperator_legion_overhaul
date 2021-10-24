@@ -152,6 +152,56 @@ distinction_chariots_offensive_15 = {
 }
 
 
+distinction_chariots_offensive_16 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_offensive = 0.16
+	}
+}
+
+distinction_chariots_offensive_17 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_offensive = 0.17
+	}
+}
+
+distinction_chariots_offensive_18 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_offensive = 0.18
+	}
+}
+
+distinction_chariots_offensive_19 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_offensive = 0.19
+	}
+}
+
+distinction_chariots_offensive_20 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_offensive = 0.20
+	}
+}
+
 ### chariots DEFENSIVE ###
 
 distinction_chariots_defensive_01 = {
@@ -305,9 +355,72 @@ distinction_chariots_defensive_15 = {
 	}
 }
 
+distinction_chariots_defensive_16 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_defensive = 0.16
+	}
+}
+
+distinction_chariots_defensive_17 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_defensive = 0.17
+	}
+}
+
+distinction_chariots_defensive_18 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_defensive = 0.18
+	}
+}
+
+distinction_chariots_defensive_19 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_defensive = 0.19
+	}
+}
+
+distinction_chariots_defensive_20 = {
+	icon = "phalera_horse"
+	commander = {
+
+	}
+	unit = {
+		chariots_defensive = 0.20
+	}
+}
+
 ### chariots DISCIPLINE ###
 
 distinction_chariots_discipline_1 = {
+	icon = "phalera_horse"
+	commander = {
+		martial = 0
+	}
+	unit = {
+		loyalty_gain_chance_modifier = 0.025
+		camels_discipline = 0.025
+		camels_maintenance_cost = -0.05
+	}
+}
+
+
+distinction_chariots_discipline_2 = {
 	icon = "phalera_horse"
 	commander = {
 		martial = 1
@@ -319,7 +432,7 @@ distinction_chariots_discipline_1 = {
 	}
 }
 
-distinction_chariots_discipline_2 = {
+distinction_chariots_discipline_3 = {
 	icon = "phalera_horse"
 	commander = {
 		martial = 2
