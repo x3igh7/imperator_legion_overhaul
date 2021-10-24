@@ -354,6 +354,7 @@ distinction_camels_defensive_15 = {
 		camels_defensive = 0.15
 	}
 }
+
 distinction_camels_defensive_16 = {
 	icon = "phalera_horse"
 	commander = {
@@ -363,6 +364,7 @@ distinction_camels_defensive_16 = {
 		camels_defensive = 0.16
 	}
 }
+
 distinction_camels_defensive_17 = {
 	icon = "phalera_horse"
 	commander = {
@@ -372,6 +374,7 @@ distinction_camels_defensive_17 = {
 		camels_defensive = 0.17
 	}
 }
+
 distinction_camels_defensive_18 = {
 	icon = "phalera_horse"
 	commander = {
@@ -381,6 +384,7 @@ distinction_camels_defensive_18 = {
 		camels_defensive = 0.18
 	}
 }
+
 distinction_camels_defensive_19 = {
 	icon = "phalera_horse"
 	commander = {
@@ -390,6 +394,7 @@ distinction_camels_defensive_19 = {
 		camels_defensive = 0.19
 	}
 }
+
 distinction_camels_defensive_20 = {
 	icon = "phalera_horse"
 	commander = {
