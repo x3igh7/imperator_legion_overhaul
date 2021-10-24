@@ -837,13 +837,13 @@ ml_camels_distinctions.5 = {
 						
 					}
 
-					trigger_event =  {
-						id= ml_cohort_master_distinctions.1
-					}
-
 					scope:actor.legion = {
 						remove_distinction = distinction_camels_discipline_1
 						add_distinction = distinction_camels_discipline_2
+					}
+
+					trigger_event =  {
+						id = ml_cohort_master_distinctions.1
 					}
 				}
 				else_if = {
@@ -859,14 +859,14 @@ ml_camels_distinctions.5 = {
 							}
 						}
 					}
-
-					trigger_event =  {
-						id= ml_cohort_master_distinctions.1
-					}
 					
 					scope:actor.legion = {
 						remove_distinction = distinction_camels_discipline_2
 						add_distinction = distinction_camels_discipline_3
+					}
+
+					trigger_event =  {
+						id = ml_cohort_master_distinctions.1
 					}
 				}
 			} 
