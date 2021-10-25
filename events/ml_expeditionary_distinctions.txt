@@ -12,24 +12,28 @@ ml_expeditionary_distinctions.1 = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				has_variable = expeditionary
+		scope:actor = {
+			if = {
+				limit = {
+					has_variable = expeditionary
+				}
+				change_variable = {
+					name = expeditionary
+					add = 1
+				}
 			}
-			change_variable = {
-				name = expeditionary
-				add = 1
+			else = {
+				set_variable = {
+					name = expeditionary
+					value = 1
+				}
 			}
-		}
-		else = {
-			set_variable = {
-				name = expeditionary
-				value = 1
+			
+			ROOT = {
+				trigger_event = {
+					id = ml_expeditionary_distinctions.3
+				}
 			}
-		}
-
-		trigger_event = {
-			id = ml_expeditionary_distinctions.3
 		}
 	}
 }
@@ -46,19 +50,21 @@ ml_expeditionary_distinctions.2 = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				has_variable = expeditionary
-			}
-
+		scope:actor = {
 			if = {
 				limit = {
-					var:expeditionary >= 1
+					has_variable = expeditionary
 				}
 
-				change_variable = {
-					name = expeditionary
-					subtract = 1
+				if = {
+					limit = {
+						var:expeditionary >= 1
+					}
+
+					change_variable = {
+						name = expeditionary
+						subtract = 1
+					}
 				}
 			}
 		}
@@ -75,7 +81,9 @@ ml_expeditionary_distinctions.3 = {
             has_legion_trigger = yes
         	has_variable = expeditionary
         	NOT = {
-				has_distinction = distinction_expeditionary_01
+        		legion = {
+					has_distinction = distinction_expeditionary_01
+        		}
 			}
         }
 	}
@@ -84,7 +92,9 @@ ml_expeditionary_distinctions.3 = {
 		scope:actor = {
 			if = {
 				limit = {
-					var:expeditionary >= 2
+					var:expeditionary >= 20
+					# testing
+					# var:expeditionary >= 2
 				}
 
 				scope:actor.legion = {

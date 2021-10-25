@@ -62,9 +62,12 @@ ml_battle_master.1 = {
 						add_distinction = distinction_battle_master_01
 					}
 
-					trigger_event = {
-						id = ml_expeditionary_distinctions.1
+					ROOT = {
+						trigger_event = {
+							id = ml_expeditionary_distinctions.1
+						}
 					}
+					
 				}
 				else_if = {
 					limit = {
@@ -163,28 +166,40 @@ ml_battle_master.2 = {
 						var:legion_victories >= 20
 					}
 
-					var:legion_victories = 20
+					set_variable = {
+						name = legion_victories
+						value = 20
+					}
 				}
 				else_if = {
 					limit = {
 						var:legion_victories >= 12
 					}
 
-					var:legion_victories = 12
+					set_variable = {
+						name = legion_victories
+						value = 12
+					}
 				}
 				else_if = {
 					limit = {
 						var:legion_victories >= 6
 					}
 
-					var:legion_victories = 6
+					set_variable = {
+						name = legion_victories
+						value = 6
+					}
 				}
 				else_if = {
 					limit = {
 						var:legion_victories >= 2
 					}
 
-					var:legion_victories = 2
+					set_variable = {
+						name = legion_victories
+						value = 2
+					}
 				}
 				else = {
 					remove_variable = legion_victories
