@@ -51,15 +51,27 @@ ml_cohort_master_distinctions.2 = {
 			if = {
 				limit = {
 					var:cohort_master = 3
+					NOT = {
+						has_distinction = distinction_cohort_master_01
+						has_distinction = distinction_cohort_master_02
+					}
 				}
 
 				scope:actor.legion = {
 					add_distinction = distinction_cohort_master_01
 				}
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.1
+				}
 			}
 			else_if = {
 				limit = {
 					var:cohort_master = 6
+					has_distinction = distinction_cohort_master_01
+					NOT = {
+						has_distinction = distinction_cohort_master_02
+					}
 				}
 
 				scope:actor.legion = {

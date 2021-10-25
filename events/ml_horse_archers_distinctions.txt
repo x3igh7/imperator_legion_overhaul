@@ -181,11 +181,15 @@ ml_horse_archers_distinctions.1 = {
 			else_if = {
 				limit = {
 					NOT = {
-						has_distinction = distinction_horse_archers_offensive_15
+						has_distinction = distinction_horse_archers_offensive_20
 					}
 				}
 
 				add_distinction = distinction_horse_archers_offensive_01
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.1
+				}
 			}
 		}
 	}
@@ -365,6 +369,10 @@ ml_horse_archers_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_horse_archers_offensive_01
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.2
+				}
 			}
 		}
 	}
@@ -549,11 +557,15 @@ type = country_event
 			else_if = {
 				limit = {
 					NOT = {
-						has_distinction = distinction_horse_archers_defensive_15
+						has_distinction = distinction_horse_archers_defensive_20
 					}
 				}
 
 				add_distinction = distinction_horse_archers_defensive_01
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.1
+				}
 			}
 		}
 	}
@@ -728,6 +740,10 @@ ml_horse_archers_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_horse_archers_defensive_01
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.2
+				}
 			}
 		}
 	}
@@ -797,6 +813,10 @@ ml_horse_archers_distinctions.5 = {
 
 					scope:actor.legion = {
 						add_distinction = distinction_horse_archers_discipline_1
+					}
+
+					trigger_event = {
+						id = ml_expeditionary_distinctions.1
 					}
 				}
 				else_if = {

@@ -22,6 +22,10 @@ ml_terrain_master_distinctions.1 = {
 				scope:actor.legion = {
 					add_distinction = distinction_terrain_master_01
 				}
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.1
+				}
 			}
 			else_if = {
 				limit = {

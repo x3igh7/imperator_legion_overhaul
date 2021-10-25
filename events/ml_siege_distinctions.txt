@@ -65,6 +65,10 @@ ml_siege_distinctions.1 = {
 					scope:legion_unit.legion = {
 						add_distinction = distinction_siege_master_01
 					}
+
+					trigger_event = {
+						id = ml_expeditionary_distinctions.1
+					}
 				}
 				else_if = {
 					limit = {

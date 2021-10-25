@@ -116,6 +116,9 @@ ml_mountains_distinctions.1 = {
 
 					add_distinction = distinction_mountains_master_01
 
+					trigger_event = {
+						id = ml_expeditionary_distinctions.1
+					}
 				}
 			}
 			else_if = {
@@ -151,6 +154,10 @@ ml_mountains_distinctions.1 = {
 				}
 
 				add_distinction = distinction_mountains_01
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.1
+				}
 			}
 		}
 	}
@@ -178,6 +185,7 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_10
+				add_distinction = distinction_mountains_05
 			}
 			else_if = {
 				limit = {
@@ -185,6 +193,7 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_09
+				add_distinction = distinction_mountains_05
 			}
 			else_if = {
 				limit = {
@@ -192,6 +201,7 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_08
+				add_distinction = distinction_mountains_05
 			}
 			else_if = {
 				limit = {
@@ -199,6 +209,7 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_07
+				add_distinction = distinction_mountains_05
 			}
 			else_if = {
 				limit = {
@@ -206,13 +217,12 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_06
+				add_distinction = distinction_mountains_05
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_mountains_05
 				}
-
-				remove_distinction = distinction_mountains_05
 			}
 			else_if = {
 				limit = {
@@ -220,6 +230,10 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_04
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.2
+				}
 			}
 			else_if = {
 				limit = {
@@ -227,6 +241,10 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_03
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.2
+				}
 			}
 			else_if = {
 				limit = {
@@ -234,6 +252,10 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_02
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.2
+				}
 			}
 			else_if = {
 				limit = {
@@ -241,6 +263,10 @@ ml_mountains_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_mountains_01
+
+				trigger_event = {
+					id = ml_expeditionary_distinctions.2
+				}
 			}
 		}
 	}
