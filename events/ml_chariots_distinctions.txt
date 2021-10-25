@@ -904,21 +904,30 @@ ml_chariots_distinctions.6 = {
 						var:chariots_victories >= 20
 					}
 
-					var:chariots_victories = 20
+					set_variable = {
+						name = chariots_victories
+						value = 20
+					}
 				}
 				else_if = {
 					limit = {
 						var:chariots_victories >= 10
 					}
 
-					var:chariots_victories = 10
+					set_variable = {
+						name = chariots_victories
+						value = 10
+					}
 				}
 				else_if = {
 					limit = {
 						var:chariots_victories >= 4
 					}
 
-					var:chariots_victories = 4
+					set_variable = {
+						name = chariots_victories
+						value = 4
+					}
 				}
 				else = {
 					remove_variable = chariots_victories

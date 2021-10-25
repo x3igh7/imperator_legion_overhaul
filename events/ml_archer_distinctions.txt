@@ -908,21 +908,30 @@ ml_archer_distinctions.6 = {
 						var:archers_victories >= 20
 					}
 
-					var:archers_victories = 20
+					set_variable = {
+						name = archers_victories
+						value = 20
+					}
 				}
 				else_if = {
 					limit = {
 						var:archers_victories >= 10
 					}
 
-					var:archers_victories = 10
+					set_variable = {
+						name = archers_victories
+						value = 10
+					}
 				}
 				else_if = {
 					limit = {
 						var:archers_victories >= 4
 					}
 
-					var:archers_victories = 4
+					set_variable = {
+						name = archers_victories
+						value = 4
+					}
 				}
 				else = {
 					remove_variable = archers_victories

@@ -84,7 +84,7 @@ ml_expeditionary_distinctions.3 = {
 		scope:actor = {
 			if = {
 				limit = {
-					var:expeditionary >= 20
+					var:expeditionary >= 2
 				}
 
 				scope:actor.legion = {

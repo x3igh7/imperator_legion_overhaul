@@ -904,21 +904,30 @@ ml_light_infantry_distinctions.6 = {
 						var:light_infantry_victories >= 20
 					}
 
-					var:light_infantry_victories = 20
+					set_variable = {
+						name = light_infantry_victories
+						value = 20
+					}
 				}
 				else_if = {
 					limit = {
 						var:light_infantry_victories >= 10
 					}
 
-					var:light_infantry_victories = 10
+					set_variable = {
+						name = light_infantry_victories
+						value = 10
+					}
 				}
 				else_if = {
 					limit = {
 						var:light_infantry_victories >= 4
 					}
 
-					var:light_infantry_victories = 4
+					set_variable = {
+						name = light_infantry_victories
+						value = 4
+					}
 				}
 				else = {
 					remove_variable = light_infantry_victories

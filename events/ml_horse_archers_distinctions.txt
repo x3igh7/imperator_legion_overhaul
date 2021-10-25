@@ -904,21 +904,30 @@ ml_horse_archers_distinctions.6 = {
 						var:horse_archers_victories >= 20
 					}
 
-					var:horse_archers_victories = 20
+					set_variable = {
+						name = horse_archers_victories
+						value = 20
+					}
 				}
 				else_if = {
 					limit = {
 						var:horse_archers_victories >= 10
 					}
 
-					var:horse_archers_victories = 10
+					set_variable = {
+						name = horse_archers_victories
+						value = 10
+					}
 				}
 				else_if = {
 					limit = {
 						var:horse_archers_victories >= 4
 					}
 
-					var:horse_archers_victories = 4
+					set_variable = {
+						name = horse_archers_victories
+						value = 4
+					}
 				}
 				else = {
 					remove_variable = horse_archers_victories
