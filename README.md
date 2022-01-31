@@ -2,7 +2,7 @@
 
 Completely changes how legions earn distinctions. RNG has been removed, and now legions grow organically based on unit composition, geography, and consistently winning.
 
-Almost all previous distinctions have been removed from the game. The remaining default ones have been rebalanced so that legions no longer have an inherent advantage over levies. Legions will grow more powerful through the corse of the game due to their ability to drill and earn permanent distinctions. 
+Almost all previous distinctions have been removed from the game. The remaining default ones have been rebalanced so that legions no longer have an inherent advantage over levies. Legions will grow more powerful through the course of the game due to their ability to drill and earn permanent distinctions. 
 
 To earn a distinction you must win a Great Battle. To be considered a Great Battle both sides need field at least 10k men (up from 8k in vanilla).
 
