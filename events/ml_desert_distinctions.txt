@@ -53,36 +53,6 @@ ml_desert_distinctions.1 = {
 
 				remove_distinction = distinction_desert_07
 				add_distinction = distinction_desert_08
-
-				scope:actor = {
-					if = {
-						limit = {
-							has_variable = terrain_master
-						}
-
-						if = {
-							limit = {
-								var:terrain_master < 5
-							}
-
-							change_variable = {
-								name = terrain_master
-								add = 1
-							}
-						}
-					} else {
-						set_variable = {
-							name = terrain_master
-							value = 1
-						}
-					}
-					
-					ROOT = {
-						trigger_event = {
-							id = ml_terrain_master_distinctions.1
-						}
-					}
-				}
 			}
 			else_if = {
 				limit = {
@@ -119,6 +89,36 @@ ml_desert_distinctions.1 = {
 					}
 
 					add_distinction = distinction_desert_master_01
+
+					scope:actor = {
+						if = {
+							limit = {
+								has_variable = terrain_master
+							}
+
+							if = {
+								limit = {
+									var:terrain_master < 5
+								}
+
+								change_variable = {
+									name = terrain_master
+									add = 1
+								}
+							}
+						} else {
+							set_variable = {
+								name = terrain_master
+								value = 1
+							}
+						}
+						
+						ROOT = {
+							trigger_event = {
+								id = ml_terrain_master_distinctions.1
+							}
+						}
+					}
 
 					ROOT = {
 						trigger_event = {
