@@ -228,7 +228,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_20
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -236,7 +236,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_19
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -244,7 +244,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_18
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -252,7 +252,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_17
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -260,7 +260,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_16
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -268,7 +268,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_15
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -276,7 +276,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_14
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -284,12 +284,15 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_13
-				add_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_offensive_12
 				}
+
+				remove_distinction = distinction_light_cavalry_offensive_12
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
@@ -297,15 +300,12 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_11
-				add_distinction = distinction_light_cavalry_offensive_06
+				add_distinction = distinction_light_cavalry_offensive_10
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_offensive_10
 				}
-
-				remove_distinction = distinction_light_cavalry_offensive_10
-				add_distinction = distinction_light_cavalry_offensive_06
 			}
 			else_if = {
 				limit = {
@@ -313,7 +313,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_09
-				add_distinction = distinction_light_cavalry_offensive_06
+				add_distinction = distinction_light_cavalry_offensive_05
 			}
 			else_if = {
 				limit = {
@@ -321,7 +321,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_08
-				add_distinction = distinction_light_cavalry_offensive_06
+				add_distinction = distinction_light_cavalry_offensive_05
 			}
 			else_if = {
 				limit = {
@@ -329,20 +329,19 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_07
-				add_distinction = distinction_light_cavalry_offensive_06
+				add_distinction = distinction_light_cavalry_offensive_05
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_offensive_06
 				}
+				remove_distinction = distinction_light_cavalry_offensive_06
+				add_distinction = distinction_light_cavalry_offensive_05
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_offensive_05
 				}
-
-				remove_distinction = distinction_light_cavalry_offensive_05
-				add_distinction = distinction_light_cavalry_offensive_02
 			}
 			else_if = {
 				limit = {
@@ -350,7 +349,7 @@ ml_light_cavalry_distinctions.2 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_offensive_04
-				add_distinction = distinction_light_cavalry_offensive_02
+				add_distinction = distinction_light_cavalry_offensive_03
 			}
 			else_if = {
 				limit = {
@@ -364,6 +363,8 @@ ml_light_cavalry_distinctions.2 = {
 				limit = {
 					has_distinction = distinction_light_cavalry_offensive_02
 				}
+				remove_distinction = distinction_light_cavalry_offensive_02
+				add_distinction = distinction_light_cavalry_offensive_01
 			}
 			else_if = {
 				limit = {
@@ -603,7 +604,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_20
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -611,7 +612,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_19
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -619,7 +620,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_18
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -627,7 +628,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_17
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -635,7 +636,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_16
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -643,7 +644,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_15
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -651,7 +652,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_14
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -659,12 +660,15 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_13
-				add_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_defensive_12
 				}
+
+				remove_distinction = distinction_light_cavalry_defensive_12
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
@@ -672,15 +676,12 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_11
-				add_distinction = distinction_light_cavalry_defensive_06
+				add_distinction = distinction_light_cavalry_defensive_10
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_defensive_10
 				}
-
-				remove_distinction = distinction_light_cavalry_defensive_10
-				add_distinction = distinction_light_cavalry_defensive_06
 			}
 			else_if = {
 				limit = {
@@ -688,7 +689,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_09
-				add_distinction = distinction_light_cavalry_defensive_06
+				add_distinction = distinction_light_cavalry_defensive_05
 			}
 			else_if = {
 				limit = {
@@ -696,7 +697,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_08
-				add_distinction = distinction_light_cavalry_defensive_06
+				add_distinction = distinction_light_cavalry_defensive_05
 			}
 			else_if = {
 				limit = {
@@ -704,20 +705,19 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_07
-				add_distinction = distinction_light_cavalry_defensive_06
+				add_distinction = distinction_light_cavalry_defensive_05
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_defensive_06
 				}
+				remove_distinction = distinction_light_cavalry_defensive_06
+				add_distinction = distinction_light_cavalry_defensive_05
 			}
 			else_if = {
 				limit = {
 					has_distinction = distinction_light_cavalry_defensive_05
 				}
-
-				remove_distinction = distinction_light_cavalry_defensive_05
-				add_distinction = distinction_light_cavalry_defensive_02
 			}
 			else_if = {
 				limit = {
@@ -725,7 +725,7 @@ ml_light_cavalry_distinctions.4 = {
 				}
 
 				remove_distinction = distinction_light_cavalry_defensive_04
-				add_distinction = distinction_light_cavalry_defensive_02
+				add_distinction = distinction_light_cavalry_defensive_03
 			}
 			else_if = {
 				limit = {
@@ -739,6 +739,8 @@ ml_light_cavalry_distinctions.4 = {
 				limit = {
 					has_distinction = distinction_light_cavalry_defensive_02
 				}
+				remove_distinction = distinction_light_cavalry_defensive_02
+				add_distinction = distinction_light_cavalry_defensive_01
 			}
 			else_if = {
 				limit = {
