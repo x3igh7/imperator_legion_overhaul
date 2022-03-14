@@ -1,0 +1,56 @@
+﻿namespace = ml_drill_distinctions
+
+ml_drill_distinctions.1 = {
+	type = country_event
+	hidden = yes
+
+	random_army = {
+		limit = {
+			has_legion_trigger = yes
+        	has_variable = is_drilling
+		}
+
+		save_scope_as = current_legion
+	}
+
+    random_list = {
+    	5 = ml_drill_distinctions.2
+    	95 = 0
+    }
+}
+
+ml_drill_distinctions.2 = {
+	type = country_event 
+	hidden = yes
+
+	random_list = {
+	    ## terrain
+		1 = ml_desert_distinctions.1
+		1 = ml_farmland_distinctions.1
+		1 = ml_forest_distinctions.1
+		1 = ml_hills_distinctions.1
+		1 = ml_jungle_distinctions.1
+		1 = ml_marsh_distinctions.1
+		1 = ml_mountains_distinctions.1
+		1 = ml_plains_distinctions.1
+		## units
+		1 = ml_archer_distinctions.1
+		1 = ml_archer_distinctions.3
+		1 = ml_camels_distinctions.1
+		1 = ml_camels_distinctions.3
+		1 = ml_chariots_distinctions.1
+		1 = ml_chariots_distinctions.3
+		1 = ml_heavy_cavalry_distinctions.1
+		1 = ml_heavy_cavalry_distinctions.3
+		1 = ml_heavy_infantry_distinctions.1
+		1 = ml_heavy_infantry_distinctions.3
+		1 = ml_horse_archers_distinctions.1
+		1 = ml_horse_archers_distinctions.3
+		1 = ml_light_cavalry_distinctions.1
+		1 = ml_light_cavalry_distinctions.3
+		1 = ml_light_infantry_distinctions.1
+		1 = ml_light_infantry_distinctions.3
+		1 = ml_warelephant_distinctions.1
+		1 = ml_warelephant_distinctions.3
+	}
+}

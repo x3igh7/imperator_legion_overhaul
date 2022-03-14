@@ -14,10 +14,13 @@ ml_archer_distinctions.1 = {
 	            	sub_unit_type = archers
             	}
             }
-            unit_location = {
-            	has_owner = yes
-            	NOT = {
-            		owner = scope:actor.unit_owner
+            OR = {
+            	has_variable = is_drilling
+            	unit_location = {
+            		has_owner = yes
+            		NOT = {
+            			owner = scope:actor.unit_owner
+            		}
             	}
             }
         }
@@ -141,6 +144,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_05
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_05
@@ -397,9 +405,12 @@ type = country_event
 	            	sub_unit_type = archers
             	}
             }
-            unit_location = {
-            	has_owner = yes
-				owner = scope:actor.unit_owner
+            OR = {
+            	has_variable = is_drilling
+            	unit_location = {
+            		has_owner = yes
+            		owner = scope:actor.unit_owner
+            	}
             }
         }
 	}
@@ -521,6 +532,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_05
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_05

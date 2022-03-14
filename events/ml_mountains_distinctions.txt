@@ -130,6 +130,11 @@ ml_mountains_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_mountains_03
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_mountains_03
