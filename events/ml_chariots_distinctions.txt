@@ -487,7 +487,6 @@ type = country_event
 
 	immediate = {
 		scope:actor.legion = {
-			scope:actor.legion = {
 			if = {
 				limit = {
 					has_distinction = distinction_chariots_defensive_19

@@ -32,6 +32,8 @@ ml_victories_defeats_count.1 = {
 
 			add_legion_history = {
 				key = victories_defeats_history
+				province = scope:actor.unit_location
+				commander = scope:actor.commander
 			}
 		}
 	}
@@ -69,6 +71,8 @@ ml_victories_defeats_count.2 = {
 
 			add_legion_history = {
 				key = victories_defeats_history
+				province = scope:actor.unit_location
+				commander = scope:actor.commander
 			}
 		}
 	}
