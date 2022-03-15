@@ -31,6 +31,11 @@ ml_archer_distinctions.1 = {
 			if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_19
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_19
@@ -40,6 +45,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_18
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_18
@@ -48,6 +58,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_17
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_17
@@ -56,6 +71,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_16
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_16
@@ -64,6 +84,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_15
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_15
@@ -72,6 +97,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_14
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_14
@@ -80,6 +110,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_13
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_13
@@ -88,6 +123,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_12
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_12
@@ -96,6 +136,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_11
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_11
@@ -104,6 +149,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_10
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_10
@@ -112,6 +162,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_09
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_09
@@ -120,6 +175,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_08
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_08
@@ -128,6 +188,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_07
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_07
@@ -136,6 +201,11 @@ ml_archer_distinctions.1 = {
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_offensive_06
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_offensive_06
@@ -420,6 +490,11 @@ type = country_event
 			if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_19
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_19
@@ -428,6 +503,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_18
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_18
@@ -436,6 +516,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_17
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_17
@@ -444,6 +529,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_16
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_16
@@ -452,6 +542,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_15
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_15
@@ -460,6 +555,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_14
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_14
@@ -468,6 +568,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_13
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_13
@@ -476,6 +581,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_12
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_12
@@ -484,6 +594,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_11
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_11
@@ -492,6 +607,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_10
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_10
@@ -500,6 +620,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_09
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_09
@@ -508,6 +633,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_08
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_08
@@ -516,6 +646,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_07
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_07
@@ -524,6 +659,11 @@ type = country_event
 			else_if = {
 				limit = {
 					has_distinction = distinction_archer_defensive_06
+					NOT = {
+						scope:actor = {
+							has_variable = is_drilling
+						}
+					}
 				}
 
 				remove_distinction = distinction_archer_defensive_06
