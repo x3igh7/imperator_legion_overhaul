@@ -24,7 +24,11 @@ ml_drill_distinctions.1 = {
 
 		random_list = {
 			95 = { }
-			5 = { 
+			5 = {
+				trigger = {
+					exists = scope:actor #dont trigger unless there is scope
+				}
+
 				ROOT = {
 					trigger_event = {
 						id = ml_drill_distinctions.2
