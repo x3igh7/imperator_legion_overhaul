@@ -12,7 +12,16 @@ ml_victories_defeats_count.1 = {
 	}
 
 	immediate = {
-		scope:actor.legion = {
+		every_governorships = {
+			limit = {
+				has_legion_trigger = yes
+				legion = scope:actor.legion
+			}
+
+			save_scope_as = legion_governorship
+		}
+
+		scope:legion_governorship = {
 			if = {
 				limit = {
 					has_variable = total_victory_count
@@ -45,7 +54,16 @@ ml_victories_defeats_count.2 = {
 	}
 
 	immediate = {
-		scope:actor.legion = {
+		every_governorships = {
+			limit = {
+				has_legion_trigger = yes
+				legion = scope:actor.legion
+			}
+
+			save_scope_as = legion_governorship
+		}
+
+		scope:legion_governorship = {
 			if = {
 				limit = {
 					has_variable = total_defeat_count
