@@ -1,0 +1,25 @@
+﻿recently_earned_distinction_effect = { # unit scope
+	every_governorships = {
+		limit = {
+			has_legion_trigger = yes
+			legion = scope:actor.legion
+		}
+
+		save_scope_as = legion_governorship
+	}
+
+	scope:legion_governorship = {
+		if = {
+			limit = {
+				has_variable = distinction_cooldown
+			}
+	
+			remove_variable = distinction_cooldown
+		}
+
+		set_variable = {
+			name = distinction_cooldown
+			duration = 5
+		}
+	}
+}

@@ -1,0 +1,7 @@
+﻿has_distinction_cooldown = { # country scope
+	any_governorships = {
+		has_legion_trigger = yes
+		legion = scope:actor.legion
+		has_variable = distinction_cooldown
+	}
+}
