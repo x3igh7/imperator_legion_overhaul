@@ -1,4 +1,4 @@
-# imperator_legion_overhaul
+[h1]Legion Overhaul[/h1]
 
 Completely changes how legions earn distinctions. RNG has been removed, and now legions grow organically based on unit composition, geography, and consistently winning.
 
@@ -12,15 +12,10 @@ After winning enough battles in a row you will gain a permanent distinction bonu
 
 Distinctions can also be gained by drilling, capped at a certain level. You will only gain distinctions you meet the requirements for; for example, you need 20 archers drilling to get archer distinctions. Similiarly, you will only gain distinctions for the terrain you are drilling on.
 
-List of all Distinctions and how to get them: 
-https://docs.google.com/spreadsheets/d/1uuyzGlyVNhYa3tHhe6oovJj8TRYSjOblVi8WNeUba-A/edit?usp=sharing
+[url=https://docs.google.com/spreadsheets/d/1uuyzGlyVNhYa3tHhe6oovJj8TRYSjOblVi8WNeUba-A/edit?usp=sharing]List of all Distinctions and how to get them:[/url] https://docs.google.com/spreadsheets/d/1uuyzGlyVNhYa3tHhe6oovJj8TRYSjOblVi8WNeUba-A/edit?usp=sharing
 
-Future Plans:
-- Allow levies to gain the same bonuses as legions (however they are destroyed when levies are disbanded).
-
-This MOD was developed with multiplayer balance in mind, hence some of the large values to discourage abuse. If  you're interested in Imperator multiplayer join a campaign at Molon Labe: https://discord.gg/JuPs9wUJae
+This MOD was developed with multiplayer balance in mind, hence some of the large values to discourage abuse. If  you're interested in Imperator multiplayer join a campaign at [url=https://discord.gg/JuPs9wUJae]Molon Labe Discord[/url]
 
 PS: I marked this as requiring Heirs of Alexander, but it may work without it.
 
-PSS: If you want to try to use this mod with other mods, I would suggest loading this mod first in your playlist.
-
+PSS: When using other mods, make sure to load this one first. The legion victories in legion history may not work if you use a UI mod.
