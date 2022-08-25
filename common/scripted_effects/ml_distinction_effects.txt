@@ -9,17 +9,27 @@
 	}
 
 	scope:legion_governorship = {
-		if = {
+		every_governorship_state = {
 			limit = {
-				has_variable = distinction_cooldown
+				is_capital_state = yes
 			}
-	
-			remove_variable = distinction_cooldown
+			
+			save_scope_as = governorship_capital_state
 		}
 
-		set_variable = {
-			name = distinction_cooldown
-			duration = 5
+		scope:governorship_capital_state = {
+			if = {
+				limit = {
+					NOT = {
+						has_state_modifier = distinction_cooldown
+					}
+				}
+
+				add_state_modifier = {
+					name = distinction_cooldown
+					duration = 5
+				}
+			}
 		}
 	}
 }

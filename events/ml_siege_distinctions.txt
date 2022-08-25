@@ -40,14 +40,17 @@ ml_siege_distinctions.1 = {
             save_scope_as = actor
         }
 
-        every_governorships = {
-			limit = {
-				has_legion_trigger = yes
-				legion = scope:actor.legion
+        scope:actor.owner = {
+			every_governorships = {
+				limit = {
+					has_legion_trigger = yes
+					legion = scope:actor.legion
+				}
+	
+				save_scope_as = legion_governorship
 			}
+        }
 
-			save_scope_as = legion_governorship
-		}
 
 		scope:legion_governorship = {
 			if = {

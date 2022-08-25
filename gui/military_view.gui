@@ -330,7 +330,7 @@ base_window = {
 				}
 			}
 			textbox = {
-				visible = "[Not( StringIsEmpty( LegionGovernorshipItem.GetGovernorship.MakeScope.GetVariable('total_victory_count').GetValue|0) )]"
+				visible = "[Not( StringIsEmpty( LegionGovernorshipItem.GetGovernorship.MakeScope.GetVariable('total_victory_count').GetValue) )]"
 				text = "Victories [LegionGovernorshipItem.GetGovernorship.MakeScope.GetVariable('total_victory_count').GetValue|0] : Defeats [LegionGovernorshipItem.GetGovernorship.MakeScope.GetVariable('total_defeat_count').GetValue|0]"
 				using = BaseFontM
 				using = Black_FontColor
