@@ -40,7 +40,7 @@ ml_siege_distinctions.1 = {
             save_scope_as = actor
         }
 
-        scope:actor.owner = {
+        scope:actor.unit_owner = {
 			every_governorships = {
 				limit = {
 					has_legion_trigger = yes
