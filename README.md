@@ -16,6 +16,9 @@ Distinctions can also be gained by drilling, capped at a certain level. You will
 
 This MOD was developed with multiplayer balance in mind, hence some of the large values to discourage abuse. If  you're interested in Imperator multiplayer join a campaign at [url=https://discord.gg/JuPs9wUJae]Molon Labe Discord[/url]
 
+Thanks to:
+Varjos for German localization
+
 PS: I marked this as requiring Heirs of Alexander, but it may work without it.
 
 PSS: When using other mods, make sure to load this one first. The legion victories in legion history may not work if you use a UI mod.
